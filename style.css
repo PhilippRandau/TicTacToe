@@ -2,6 +2,89 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin-bottom: 30px !important;
+  font-size: 42px;
+  background-image:linear-gradient(120deg,darkblue,darkorchid);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+
+.play-field {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.style-border {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 10px solid transparent;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.blur{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  backdrop-filter: blur(6px);
+}
+
+.ask-playername{
+  display: flex;
+  flex-direction: column;
+}
+
+.ask-playername span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.ask-playername input{
+  
+  margin: 10px;
+}
+         
+.ask-playername button {
+  background-image: linear-gradient(to left, darkorchid 0%, darkblue  50%);
+  margin: 10px;
+  padding: 7px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.ask-playername button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
 table {
   border-collapse: collapse;
 }
@@ -11,6 +94,12 @@ table td {
   width: 133px;
   height: 133px;
   position: relative;
+  cursor: pointer;
+}
+
+table td:hover {
+  background-color: rgba(0, 0, 255, 0.2);
+
 }
 
 table tr {
@@ -32,6 +121,23 @@ table tr:last-child td {
 table tr td:last-child {
   border-right: 0;
 }
+
+table tr:first-child td:first-child {
+  border-top-left-radius: 20px;
+}
+
+table tr:first-child td:last-child {
+  border-top-right-radius: 20px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
 .shape {
   position: absolute;
   width: 90px;
@@ -39,3 +145,8 @@ table tr td:last-child {
   top: 21px;
   left: 21px;
 }
+
+.d-none {
+  display: none;
+}
+
