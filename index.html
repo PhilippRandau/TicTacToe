@@ -20,9 +20,10 @@
 </head>
 
 <body onload="init()">
+    
     <section class="play-field">
         <h1>TicTacToe</h1>
-        <div class="blur" id="ask-playername">
+        <div class="blur" id="blur-playfield">
         </div>
         <div class="style-border">
             <table>
@@ -68,11 +69,19 @@
                         <img id="circle-8" class="shape d-none" src="img/circle.png" alt="">
                     </td>
                 </tr>
+                
             </table>
+            <div id="horizontal-row-1" class="horizontal-line" style="top: 77px;"></div>
+            <div id="horizontal-row-2" class="horizontal-line" style="top: 213px;"></div>
+            <div id="horizontal-row-3" class="horizontal-line" style="top: 345px;"></div>
+            <div id="vertical-column-1" class="horizontal-line vertical-transform" style="left: -118px;"></div>
+            <div id="vertical-column-2" class="horizontal-line vertical-transform" style="left: 17px;"></div>
+            <div id="vertical-column-3" class="horizontal-line vertical-transform" style="left: 150px;"></div>
+            <div id="diagonal-0-8" class="horizontal-line diagonal-transform" style="transform: rotate(45deg) scaleX(0);"></div>
+            <div id="diagonal-6-2" class="horizontal-line diagonal-transform" style="transform: rotate(-45deg) scaleX(0);"></div>
         </div>
 
-        <div class="game-info">
-            <h2>Du bist dran:</h2>
+        <div id="game-info" class="game-info">
             <div class="player" id="player">
 
             </div>
