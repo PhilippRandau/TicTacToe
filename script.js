@@ -11,25 +11,24 @@ function init() {
 }
 
 function askPlayerNames(i) {
-
-
     if (i < 3) {
         document.getElementById('blur-playfield').innerHTML = templateAskPlayerNames(i);
     } else {
-        document.getElementById('blur-playfield').innerHTML = '';
-        document.getElementById('blur-playfield').classList.add('d-none');
-        playerChange();
+        startGame();
     }
 }
 
-
+function startGame(){
+    document.getElementById('blur-playfield').innerHTML = '';
+    document.getElementById('blur-playfield').classList.add('d-none');
+    playerChange();
+}
 
 function pushPlayerNames(i) {
     let inputPlayerName = document.getElementById('player-names');
     playerNames.push(inputPlayerName.value);
     i++;
     askPlayerNames(i);
-
 }
 
 function fillShape(id) {

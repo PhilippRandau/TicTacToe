@@ -5,10 +5,10 @@ body {
 h1 {
   margin-bottom: 30px !important;
   font-size: 42px;
-  background-image:linear-gradient(120deg,darkblue,darkorchid);
- -webkit-background-clip: text;
- background-clip: text;
- -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -29,13 +29,13 @@ h1 {
   justify-content: center;
   align-items: center;
   background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, darkblue, darkorchid) border-box;
+    linear-gradient(to right, darkblue, darkorchid) border-box;
   border: 10px solid transparent;
   border-radius: 40px;
   margin-bottom: 30px;
 }
 
-.blur{
+.blur {
   width: 500px;
   height: 500px;
   position: absolute;
@@ -47,36 +47,42 @@ h1 {
   backdrop-filter: blur(4px);
 }
 
-.ask-playername{
+.ask-playername {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.ask-playername span{
+.ask-playername span {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
   font-size: 20px;
   font-weight: 700;
+  background-color: rgba(238, 238, 238, 0.3);
+  box-shadow: 0 0 30px rgba(238, 238, 238, 0.7);
+  border-radius: 10px;
 }
-.ask-playername input{
-  
+
+.ask-playername input {
+  width: 250px;
   margin: 10px;
 }
-         
+
 .ask-playername button {
-  background-image: linear-gradient(to left, #9932cc 0%, darkblue  50%);
+  background-image: linear-gradient(to left, #9932cc 0%, darkblue 50%);
   margin: 10px;
   padding: 7px 40px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.25s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
+  width: 250px;
 }
 
 .ask-playername button:hover {
@@ -88,7 +94,7 @@ h1 {
 
 table {
   border-collapse: collapse;
-  
+
 }
 
 table td {
@@ -148,23 +154,23 @@ table tr:last-child td:last-child {
   left: 21px;
 }
 
-.game-info{
+.game-info {
   height: 41px;
 }
 
-.player{
+.player {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 
-.player-sign{
+.player-sign {
   height: 30px;
   width: 30px;
 }
 
-.horizontal-line{
+.horizontal-line {
   width: 399px;
   background-color: grey;
   border: 5px solid transparent;
@@ -175,24 +181,24 @@ table tr:last-child td:last-child {
   transform: scaleX(0);
 }
 
-.vertical-transform{
+.vertical-transform {
   transform: rotate(90deg) scaleX(0);
 }
 
-.diagonal-transform{
+.diagonal-transform {
   width: 540px;
   left: -50px !important;
 }
 
-.restart-game{
-  background-image: linear-gradient(to left, #9932cc 0%, darkblue  50%);
+.restart-game {
+  background-image: linear-gradient(to left, #9932cc 0%, darkblue 50%);
   margin: 10px;
   padding: 7px 40px !important;
   text-align: center;
   text-transform: uppercase;
   transition: 0.25s !important;
   background-size: 200% auto;
-  color: white !important;            
+  color: white !important;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -202,4 +208,96 @@ table tr:last-child td:last-child {
   background-position: right center;
   color: #fff;
   text-decoration: none;
+}
+
+@media(max-width:500px) {
+  .blur {
+    width: 380px;
+    height: 380px;
+  }
+
+  .style-border {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+
+  table td {
+    height: 100px;
+    width: 100px;
+  }
+
+  table tr:first-child td:first-child {
+    border-top-left-radius: 15px;
+  }
+
+  table tr:first-child td:last-child {
+    border-top-right-radius: 15px;
+  }
+
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+  }
+
+  .ask-playername input {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .ask-playername button{
+    padding: 7px 10px;
+    font-size: 16px;
+    width: 200px;
+  }
+}
+
+@media(max-width:400px) {
+  .blur {
+    width: 280px;
+    height: 280px;
+  }
+
+  .style-border {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    height: 66px;
+    width: 66px;
+  }
+
+  table tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ask-playername input {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .ask-playername button{
+    padding: 4px 5px;
+    font-size: 14px;
+    width: 150px;
+  }
 }
