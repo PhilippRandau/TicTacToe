@@ -210,6 +210,30 @@ table tr:last-child td:last-child {
   text-decoration: none;
 }
 
+.line-1 {
+  top: 77px;
+}
+
+.line-2 {
+  top: 213px;
+}
+
+.line-3 {
+  top: 345px;
+}
+
+.line-4 {
+  left: -118px;
+}
+
+.line-5 {
+  left: 17px;
+}
+
+.line-6 {
+  left: 150px;
+}
+
 @media(max-width:500px) {
   .blur {
     width: 380px;
@@ -249,10 +273,53 @@ table tr:last-child td:last-child {
     font-size: 16px;
   }
 
-  .ask-playername button{
+  .ask-playername button {
     padding: 7px 10px;
     font-size: 16px;
     width: 200px;
+  }
+
+  .shape {
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+  }
+
+
+  .horizontal-line {
+    width: 300px;
+    border: 3px solid transparent;
+    left: 15px;
+  }
+
+  .line-1 {
+    top: 63px;
+  }
+  
+  .line-2 {
+    top: 165px;
+  }
+  
+  .line-3 {
+    top: 265px;
+  }
+  
+  .line-4 {
+    left: -85px;
+  }
+  
+  .line-5 {
+    left: 17px;
+  }
+  
+  .line-6 {
+    left: 117px;
+  }
+
+  .diagonal-transform {
+    width: 400px;
+    left: -35px !important;
   }
 }
 
@@ -295,9 +362,53 @@ table tr:last-child td:last-child {
     font-size: 14px;
   }
 
-  .ask-playername button{
+  .ask-playername button {
     padding: 4px 5px;
     font-size: 14px;
     width: 150px;
+  }
+
+  .player h2 {
+    font-size: 20px;
+  }
+
+  .shape {
+    width: 44px;
+    height: 44px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .horizontal-line {
+    width: 200px;
+  }
+
+  .line-1 {
+    top: 45px;
+  }
+  
+  .line-2 {
+    top: 113px;
+  }
+  
+  .line-3 {
+    top: 179px;
+  }
+  
+  .line-4 {
+    left: -52px;
+  }
+  
+  .line-5 {
+    left: 17px;
+  }
+  
+  .line-6 {
+    left: 82px;
+  }
+
+  .diagonal-transform {
+    width: 300px;
+    left: -35px !important;
   }
 }

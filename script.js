@@ -91,7 +91,6 @@ function actualPlayerCircle() {
 }
 
 function winner() {
-
     checkWinHorizontal_1();
     checkWinHorizontal_2();
     checkWinHorizontal_3();
@@ -104,7 +103,6 @@ function winner() {
     showWinnerEndScreen();
     showLineOfWinnerCircle();
     showLineOfWinnerCross();
-
 }
 
 function checkWinHorizontal_1() {
